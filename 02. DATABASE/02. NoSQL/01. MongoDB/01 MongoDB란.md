@@ -42,5 +42,43 @@
 ```
 
 2. 데이터베이스와 컬렉션 생성
+
 ![a1](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlVkU6%2FbtqF5zW22bE%2F42ehjv4FyU5ictDg1CJ4IK%2Fimg.png)
 
+|구성|명칭|
+|----------|----|
+|데이터베이스|testDB|
+|컬렉션|myCollection|
+|도큐먼트|{x:1} <br>{x: [1,2,3], y:4} |
+
+3. 데이터베이스왘 ㅓㄹ렉션 조회
+
+## 4. 데이터 타입
+
+- 도큐먼트는 BSON 구조를 가진다. BSON 구조의 데이터 타입
+|번호|타입|이름|비고
+|---|---|---|---|
+|1|Dobule|"double"| |
+|2|String|"string"| |
+|3|Object|"object"| |
+|4|Array|"array"| |
+|5|Binary data|"binData"| |
+|6|Undefined|"undefined"| Deprecated|
+|7|ObjectId|"objectId"| |
+|8|Boolean|"bool"| |
+|9|Date|"date"| |
+|10|Null|"null"| |
+|11|Regular Expression|"regex"| |
+|12|DBPointer|"dbPointer"|Deprecated |
+|13|JavaScript|"javascript"| |
+|14|Symbol|"symbol"|Deprecated|
+|15|JavaScript (with scope)|"javascriptWithScope"| |
+|16|32-bit integer|"int"| |
+|17|Timestamp|"timestamp"| |
+|18|64-bit integer|"long"| |
+|19|Decimal128|"decimal"| |
+|-1|Min key|"minKey"| |
+|127|Max key|"maxKey"| |
+
+
+- 기본 타입 : JSON에서 값으로 가질 수 있던 타입 중 기본적인 타입은 BSON에서도 값으로 가질 수 있다.
